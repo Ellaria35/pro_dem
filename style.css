@@ -66,6 +66,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   padding: 8px 0;
+  text-align: center;
   position: relative;
   transition: color 0.2s ease;
 }
