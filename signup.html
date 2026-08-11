@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | EllantageVolley</title>
+  <link rel="shortcut icon" href="logo.png">
+  <link rel="stylesheet" href="signup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="auth-wrapper">
+    <!-- Header/Logo -->
+    <header class="app-header">
+      <div class="logo">
+        <img src="logo.png" alt="EllantageVolley Logo" class="auth-logo-img">
+        <span class="logo-name">EllantageVolley</span>
+      </div>
+      <p class="tagline">Volleyball fitness and jump tracker</p>
+    </header>
+
+    <!-- Sign Up Form Card -->
+    <main class="auth-card">
+      <h1>SIGN UP</h1>
+
+      <!-- Redirects to Dashboard (index.html) upon submission -->
+      <form class="auth-form" action="index.html">
+        <div class="input-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="name@example.com" required>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Create a password" required>
+        </div>
+
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+        </div>
+
+        <button type="submit" class="btn-primary">Create Account</button>
+      </form>
+      <p class="footer-text">
+        Already have an account? <a href="login.html">Log In</a>
+      </p>
+    </main>
+  </div>
+
+</body>
+</html>
