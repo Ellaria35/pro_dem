@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --primary-blue: #0056D2;
+  --secondary-orange: #FF6B00;
+  --dark-slate: #333333;
+  --bg-color: #F4F6F9;
+  --card-bg: #FFFFFF;
+  --text-muted: #757575;
+  --border-color: #E5E7EB;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--dark-slate);
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card-bg);
+  padding: 12px 40px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#logo-img {
+  height: 44px;
+  width: auto;
+}
+
+#logo-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary-blue);
+}
+
+.nav-auth-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-secondary {
+  text-decoration: none;
+  color: var(--dark-slate);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+}
+.btn-secondary:hover{
+    color: var(--secondary-orange);
+    transition: .9s;
+}
+
+.btn-primary {
+  text-decoration: none;
+  background-color: var(--primary-blue);
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-orange);
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-color) 100%); */
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.badge {
+  background-color: #EBF3FF;
+  color: var(--primary-blue);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: var(--dark-slate);
+}
+
+.hero p {
+  font-size: 18px;
+  color:rgba(0, 0, 0, 0.788);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.btn-hero {
+  text-decoration: none;
+  background-color: var(--primary-blue);
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: 8px;
+  display: inline-block;
+}
+.btn-hero:hover{
+    background-color: var(--secondary-orange);
+    transition: .9s;
+}
+
+/* Features */
+.features-section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-bottom: 32px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+.feature-card:hover{
+    transform: translateY(-6px) scale(1.01);
+    border-color: #0056D2;
+    transition: .9s;
+}
+
+.feature-icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.feature-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  font-size: 17px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* CTA Banner */
+.cta-banner {
+  background-color: var(--primary-blue);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 60px;
+}
+
+.cta-banner h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.cta-banner p {
+  font-size: 17px;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+.btn-hero-orange {
+  text-decoration: none;
+  background-color: var(--secondary-orange);
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: 8px;
+  display: inline-block;
+}
+.btn-hero-orange:hover{
+    background-color: #FFFFFF;
+    color: #0056D2;
+    transition: .9s;
+}
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--border-color);
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.footer-links a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  margin-left: 16px;
+  font-weight: 600;
+}
+.footer-links a:hover{
+    color: #FF6B00;
+    transition: .9s;
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .hero h1 { font-size: 28px; }
+  #navbar { padding: 12px 16px; }
+  footer { flex-direction: column; gap: 12px; text-align: center; }
+}
+/* ===================================================
+   MOBILE NAVBAR FIX (Works on 320px - 480px)
+   =================================================== */
+
+@media (max-width: 480px) {
+  /* Prevent full-page horizontal scrolling */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* 1. Header layout: Stacks Logo top, Buttons bottom */
+  #navbar {
+    padding: 10px 14px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 2. Compact Logo */
+  #logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  #logo-img {
+    height: 28px !important;
+    width: auto !important;
+  }
+
+  #logo-text {
+    font-size: 16px !important;
+    white-space: nowrap;
+  }
+
+  /* 3. Button Container */
+  .nav-auth-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+
+  /* 4. Fix Button Sizing & Prevent Vertical Text Stacking */
+  .btn-primary, 
+  .btn-secondary {
+    white-space: nowrap !important; /* FORCES text onto 1 line */
+    font-size: 12px !important;
+    padding: 6px 14px !important;
+    border-radius: 6px !important;
+    text-align: center !important;
+    display: inline-block !important;
+    line-height: 1.2 !important;
+    height: auto !important;
+  }
+
+  .btn-primary {
+    background-color: #0056D2 !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+  }
+
+  .btn-secondary {
+    color: #333333 !important;
+    font-weight: 600 !important;
+  }
+
+  /* 5. Scale down the giant hero headline on mobile */
+  .hero h1 {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+    padding: 0 10px;
+  }
+}
