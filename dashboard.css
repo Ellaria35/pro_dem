@@ -568,6 +568,8 @@ body {
 
 .form-group input, 
 .form-group select {
+  width: 100%;        /* Forces input to fit container width */
+  min-width: 0;       /* Prevents input from overflowing flex/grid parents */
   padding: 10px;
   border: 1px solid var(--border-color);
   border-radius: 6px;
