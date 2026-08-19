@@ -161,6 +161,45 @@
     </section>
 
   </main>
+  <!-- Log Session Modal Overlay -->
+<div id="log-modal" class="modal-overlay">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Log Training Session</h2>
+      <button id="close-modal-btn" aria-label="Close modal">&times;</button>
+    </div>
+
+    <form id="session-form">
+      <div class="form-group">
+        <label for="workout-type">Workout Type</label>
+        <select id="workout-type" required>
+          <option value="Agility & Footwork">🏃 Agility & Footwork</option>
+          <option value="Court Practice">🏐 Court Practice</option>
+          <option value="Strength Training">🏋️ Strength Training</option>
+          <option value="Plyometrics">⚡ Plyometrics & Jumps</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="duration">Duration (mins)</label>
+          <input type="number" id="duration" placeholder="45" required min="1">
+        </div>
+        <div class="form-group">
+          <label for="jumps">Jumps Completed</label>
+          <input type="number" id="jumps" placeholder="80" required min="0">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="calories">Calories Burned (kcal)</label>
+        <input type="number" id="calories" placeholder="250" required min="0">
+      </div>
+
+      <button type="submit" class="btn-submit">Save Session</button>
+    </form>
+  </div>
+</div>
   <script src="dashboard.js"></script>
 </body>
 </html>
