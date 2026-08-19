@@ -485,8 +485,11 @@ body {
   color: var(--clr-primary);
 }
 
-/* Logs section */
-/* Modal Backdrop Overlay */
+/* ===================================================
+   LOG SESSION MODAL STYLES
+   =================================================== */
+
+/* Dark Backdrop Overlay */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -500,12 +503,13 @@ body {
   z-index: 1000;
 }
 
+/* Active State Triggered by JavaScript */
 .modal-overlay.active {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* Modal Content Box */
+/* Modal Box Structure */
 .modal-content {
   background-color: #ffffff;
   width: 90%;
@@ -594,8 +598,6 @@ body {
 .btn-submit:hover {
   background-color: #0043A8;
 }
-
-
 /* ===================================================
    RESPONSIVE MEDIA QUERIES
    =================================================== */
